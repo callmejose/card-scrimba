@@ -1,0 +1,96 @@
+:root {
+  --shadow-color: 71deg 71% 17%;
+  --shadow-elevation-low:
+    0.2px 0.4px 0.5px hsl(var(--shadow-color) / 0.34),
+    0.4px 0.7px 0.9px -1.2px hsl(var(--shadow-color) / 0.34),
+    0.9px 1.6px 2.1px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium:
+    0.2px 0.4px 0.5px hsl(var(--shadow-color) / 0.36),
+    0.8px 1.3px 1.7px -0.8px hsl(var(--shadow-color) / 0.36),
+    1.9px 3.3px 4.3px -1.7px hsl(var(--shadow-color) / 0.36),
+    4.7px 8px 10.4px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-high:
+    0.2px 0.4px 0.5px hsl(var(--shadow-color) / 0.34),
+    1.4px 2.3px 3px -0.4px hsl(var(--shadow-color) / 0.34),
+    2.5px 4.3px 5.6px -0.7px hsl(var(--shadow-color) / 0.34),
+    4.2px 7.1px 9.3px -1.1px hsl(var(--shadow-color) / 0.34),
+    6.7px 11.4px 14.9px -1.4px hsl(var(--shadow-color) / 0.34),
+    10.4px 17.8px 23.2px -1.8px hsl(var(--shadow-color) / 0.34),
+    15.9px 27px 35.3px -2.1px hsl(var(--shadow-color) / 0.34),
+    23.4px 39.8px 51.9px -2.5px hsl(var(--shadow-color) / 0.34);
+}
+
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Roboto, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 100%;
+    box-shadow: var(--shadow-elevation-medium);
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #6C7C24;
+    color: #660405;
+    border-bottom: 10px solid #2e0005;
+    border-radius: 20px;
+    
+    transition: transform 750ms;
+    will-change: transform;
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.card:hover {
+    transform: translateY(+5px);
+    background: hsl(71, 55%, 30%);
+    box-shadow: var(--shadow-elevation-medium);
+  }
+  
+a {
+    color: #660405;
+    text-decoration-line: none;
+}
+  
+.name:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: yellowgreen;
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
